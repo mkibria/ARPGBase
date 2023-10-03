@@ -26,7 +26,7 @@ Currently Have Health and Mana pickups that allow for the recovery of these stat
 ### Inventory System
 ### Equipment System
 ### Physical Animation
--Knockback Effects based on Impulse Intensity
--Recovery after Falling
--Physically Blended Fall Reactions from varying Jump Heights
+- Knockback Effects based on Impulse Intensity
+- Recovery after Falling
+- Physically Blended Fall Reactions from varying Jump Heights
 
