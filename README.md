@@ -3,6 +3,11 @@
 This is a starter project/template to allow anyone to create a stats-driven action RPG-style game with a character leveling system and ability Unlock System.
 The system will also have equipable weapons, armor, and a basic magic system. 
 
+## Getting Started
+Because of Github space limitations, Binaries are not included. Source files need to be built. You may need to:
+1. Generate Visual Studio Project Files by Right Clicking on ARPGBase.uproject
+2. Build the Visual Studio Project File through ARPGBase.sln
+
 ## Current Features
 
 ### Game Ability System
