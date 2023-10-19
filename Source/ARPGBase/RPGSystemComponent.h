@@ -32,6 +32,11 @@ public:
 	void ExperienceUp(int32 EXP);
 	UFUNCTION(BlueprintCallable, Category = "Leveling System")
 	void LevelingSystemInit(TArray<int32> LevelUpInitTable);
+	UFUNCTION(BlueprintCallable, Category = "Skill System")
+	bool SkillUnlockCost(int32 SkillPointsUsed);
+	UFUNCTION(BlueprintCallable, Category = "Skill System")
+	int32 GetSkillPoints();
+
 protected:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Leveling System")
 	int32 ExperiencePoints = 0;
@@ -41,5 +46,7 @@ protected:
 	TArray<int32> LevelExperienceTable;
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Leveling System")
 	int32 MaxLevel = 0;
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Skill System")
+	int32 SkillPoints = 0;
 
 };

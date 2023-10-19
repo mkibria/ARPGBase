@@ -70,5 +70,17 @@ void URPGSystemComponent::LevelingSystemInit(TArray<int32> LevelUpInitTable)
 	MaxLevel = LevelExperienceTable.Num() + 1;
 }
 
+bool URPGSystemComponent::SkillUnlockCost(int32 SkillPointsUsed)
+{
+	if (SkillPoints > SkillPointsUsed)
+	{
+		SkillPoints -= SkillPointsUsed;
+		return true;
+	}
+	return false;
+}
 
-
+int32 URPGSystemComponent::GetSkillPoints()
+{
+	return SkillPoints;
+}
